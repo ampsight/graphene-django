@@ -1,0 +1,28 @@
+{
+	"name": "graphene_django",
+	"version": "2.15.0-ampsight",
+	"description": "Ampsight fork of graphene-django with local dependencies for high side access to GraphiQL.",
+	"main": "graphiql.html",
+	"dependencies": {
+		"graphiql-with-extensions": "0.14.3",
+		"graphiql-subscriptions-fetcher": "0.0.2",
+		"js-cookie": "3.0.0-rc.4",
+		"react": "16.13.1",
+		"react-dom": "16.13.1",
+		"subscriptions-transport-ws": "0.9.19",
+		"whatwg-fetch": "3.6.2"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ampsight/graphene-django.git"
+	},
+	"author": "Avi Nerenberg",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ampsight/graphene-django/issues"
+	},
+	"homepage": "https://github.com/ampsight/graphene-django#readme"
+}
