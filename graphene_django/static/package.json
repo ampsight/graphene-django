@@ -2,6 +2,7 @@
 	"name": "graphene_django",
 	"version": "2.15.0-ampsight",
 	"description": "Ampsight fork of graphene-django with local dependencies for high side access to GraphiQL.",
+	"readme": "This package.json file lists the dependencies that are used by the GraphiQL interface, but the production bundles of each have been extracted and included in the repository (under js/ and css/). Some bundles have been renamed to avoid conflicts. See the README at the repo root for more information.",
 	"main": "graphiql.html",
 	"dependencies": {
 		"graphiql-with-extensions": "0.14.3",

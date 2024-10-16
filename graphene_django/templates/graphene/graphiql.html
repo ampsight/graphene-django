@@ -21,7 +21,7 @@ add "&raw" to the end of the URL within a browser.
     </style>
 
     <link
-      href="{% static 'node_modules/graphiql-with-extensions/graphiqlWithExtensions.css' %}"
+      href="{% static 'css/graphiqlWithExtensions.css' %}"
       rel="stylesheet"
     />
   </head>
@@ -29,16 +29,16 @@ add "&raw" to the end of the URL within a browser.
   <body>
     <div id="editor"></div>
 
-    <script src="{% static 'node_modules/whatwg-fetch/dist/fetch.umd.js' %}"></script>
-    <script src="{% static 'node_modules/react/umd/react.production.min.js' %}"></script>
-    <script src="{% static 'node_modules/react-dom/umd/react-dom.production.min.js' %}"></script>
-    <script src="{% static 'node_modules/graphiql-with-extensions/graphiqlWithExtensions.min.js' %}"></script>
-    <script src="{% static 'node_modules/js-cookie/dist/js.cookie.min.js' %}"></script>
-    <script src="{% static 'node_modules/subscriptions-transport-ws/browser/client.js' %}"></script>
-    <script src="{% static 'node_modules/graphiql-subscriptions-fetcher/browser/client.js' %}"></script>
+    <script src="{% static 'js/fetch.umd.js' %}"></script>
+    <script src="{% static 'js/react.production.min.js' %}"></script>
+    <script src="{% static 'js/react-dom.production.min.js' %}"></script>
+    <script src="{% static 'js/graphiqlWithExtensions.min.js' %}"></script>
+    <script src="{% static 'js/js.cookie.min.js' %}"></script>
+    <script src="{% static 'js/subscriptions-transport-ws.client.js' %}"></script>
+    <script src="{% static 'js/graphiql-subscriptions-fetcher.client.js' %}"></script>
     <script>
       function httpUrlToWebSockeUrl(url) {
-        return url.replace(/(http)(s)?\:\/\//, "ws$2://");
+        return url.replace(/(http)(s)?:\/\//, "ws$2://");
       }
 
       function graphQLFetcher(graphQLParams) {
